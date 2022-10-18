@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="bg-success">
+    <!-----------------------------------------------------------
+                   HEADER SECTION
+    ------------------------------------------------------------>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-info">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="SCREEN.png" alt="Logo" class="rounded-pill" style="width: 40px;">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0" style="margin-left: 30vw;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" aria-current="page">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link active">Doctors</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Departments</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Clinical Microbiology</a>
+                                <a class="dropdown-item" href="#">Clinical Chemistry</a>
+                                <a href="" class="dropdown-item">Hematology</a>
+                                <a href="" class="dropdown-item">Molecular Diagonastics</a>
+                                <a href="" class="dropdown-item">Reproductive Biology</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contact Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a name="" id="" class="btn btn-primary nav-link" href="#" role="button">Get An
+                                Appointment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+     <!-----------------------------------------------------------
+                  MIDDLE SECTION
+    ------------------------------------------------------------>
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="corona.jpg" class="w-100 d-block" alt="First slide" width="100vw" height="350px">
+            </div>
+            <div class="carousel-item">
+                <img src="micro.jpg" class="w-100 d-block" alt="Second slide" width="100vw" height="350px">
+            </div>
+            <div class="carousel-item">
+                <img src="hlw.jpg" class="w-100  d-block" alt="Third slide" width="100vw" height="350px">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span>Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span>Next</span>
+        </button>
+    </div>
+    <!-----------------------------------------------------
+      CONTACT US FORM 
+------------------------------------------------------>
+
+    <form action="" class="bg-light">
+        <h1 style="text-align: center;">Contact Us</h1>
+        <p style="text-align: center;">Do you have any questions? Please do not hesitate to contact us directly. Our
+            team will come back to you within a matter of hours to help you.</p>
+<div class="row">
+    <div class="form-group col">
+        <label for="Name">Your Name</label>
+        <input type="text" class="form-control" name="" id="Name" aria-describedby="helpId" placeholder="Name">
+        <small id="helpId" class="form-text text-danger">Please Input Your Name</small>
+    </div>
+    <div class="form-group col">
+        <label for="email">Your Email</label>
+        <input type="text" class="form-control" name="" id="email" aria-describedby="helpId" placeholder="xyz@gmail.com">
+        <small id="helpId" class="form-text text-danger">Please Input Your Email Id</small>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="subject">Subject</label>
+    <input type="text"
+      class="form-control" name="" id="subject" aria-describedby="helpId" placeholder="Your Message">
+    <small id="helpId" class="form-text text-danger">Please Mention Your Subject</small>
+  </div>
+
+
+       <div class="form-group">
+         <label for="message">Your Message</label>
+         <input type="text"
+           class="form-control" name="" id="message" aria-describedby="helpId" placeholder="Your Message">
+         <small id="helpId" class="form-text text-danger">Please Mention Your Message</small>
+       </div>
+
+       <div class="d-grid">
+        <button type="button" class="btn btn-primary btn-block">Submit</button>
+    </div>
+    </form>
+<br>
+     <!---------------------------------------------------------
+              FOOTER SECTION
+    ----------------------------------------------------------->
+    <footer>
+        <div class="container-fluid bg-dark text-white">
+            <div class="d-flex justify-content-center">
+                <h6>Maintained And Designed By XYZ Technology limited</h6>
+                <p>&#169;</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
